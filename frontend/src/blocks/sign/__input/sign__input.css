@@ -1,0 +1,24 @@
+.sign__input {
+  border: 0;
+  border-bottom: 2px solid #CCC;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: normal;
+  background-color: #000;
+  height: 27px;
+  padding: 0;
+  margin-bottom: 28px;
+  color: #fff;
+}
+
+/* .popup__input:last-of-type {
+  margin-bottom: 48px;
+} */
+
+/* @media screen and (max-width: 580px) {
+  .popup__input {
+    margin-right: 22px;
+    margin-left: 22px;
+  }
+}  */

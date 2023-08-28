@@ -1,0 +1,16 @@
+.sign {
+  margin: 0 auto;
+  font-family: 'Inter', Arial, sans-serif;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  width: 358px;
+  height: 100%;
+  display: flex;
+}
+
+@media screen and (max-width: 580px) {
+  .sign {
+    width: 260px;
+  }
+}

@@ -1,0 +1,31 @@
+.sign__submit {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: normal;
+  text-align: center;
+  color: #000;
+  border: 0;
+  background: #fff;
+  border-radius: 2px;
+  padding: 14px 84px;
+  width: 358px;
+  margin: 188px auto 15px;
+  cursor: pointer;
+}
+
+.sign__submit:hover {
+  background: rgba(255, 255, 255, .8);
+  /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));*/
+} 
+
+@media screen and (max-width: 580px) {
+  .sign__submit {
+    font-size: 14px;
+    padding-right: 35px;
+    padding-left: 35px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    width: 260px;
+  }
+}

@@ -1,0 +1,19 @@
+.profile__info {
+  padding-left: 30px;
+  display: grid;
+  grid-template-areas:
+  "name buttonedit"
+  "description .";
+  column-gap: 7px;
+  row-gap: 18px;
+  align-items: center;
+  max-height: 77px;
+}
+
+@media screen and (max-width: 580px) {
+  .profile__info {
+    padding-top: 26px;
+    padding-bottom: 33px;
+    row-gap: 10px;
+  }
+}
