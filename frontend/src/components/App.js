@@ -143,7 +143,7 @@ function App() {
       .then(() =>{
         setInfoTooltipOpen(true)
         setIsSuccessInfoTooltipStatus(true)
-        navigate('/sign-in')
+        navigate('/signin')
       })
       .catch((error) => {
         setInfoTooltipOpen(true)
@@ -187,7 +187,7 @@ function App() {
     localStorage.removeItem('jwt');
     setIsAuthenticated(false);
     setEmail('');
-    navigate('/sign-in');
+    navigate('/signin');
   }
 
   function handleCardLike(card) {
@@ -220,12 +220,12 @@ function App() {
             onCardLike={handleCardLike}
             />} 
           />
-          <Route path='/sign-in/*' element={ 
+          <Route path='/signin/*' element={ 
             <>
               <Login name={'signin'} handleLogin={handleLogin}/>
             </>
           }/>
-          <Route path='/sign-up' element={
+          <Route path='/signup' element={
             <>
               <Register name={'signup'} handleRegister={handleRegister}/>
             </>
