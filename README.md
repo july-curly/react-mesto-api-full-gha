@@ -9,8 +9,8 @@
 
 ## Ссылки на проект
 
-IP-адрес x.x.x.x
+IP 158.160.26.138
 
-Frontend https://...
+Frontend https://july.nomoredomainsicu.ru
 
-Backend https://...
+Backend https://api.july.nomoredomainsicu.ru
