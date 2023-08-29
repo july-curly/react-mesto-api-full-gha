@@ -12,7 +12,9 @@ function checkRes(res){
 export function register (email, password) {
   return fetch(`${baseUrl}/signup`, {
     method: 'POST',
-    headers: {"Content-Type": "application/json" },
+    headers: {
+      "Content-Type": "application/json" 
+    },
     body: JSON.stringify({
       password: password,
       email: email 
@@ -24,7 +26,9 @@ export function register (email, password) {
 export function authorize (email, password) {
   return fetch(`${baseUrl}/signin`, {
     method: 'POST',
-    headers: {"Content-Type": "application/json" },
+    headers: {
+      "Content-Type": "application/json" 
+    },
     body: JSON.stringify({
       password: password,
       email: email
