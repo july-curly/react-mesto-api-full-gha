@@ -114,7 +114,7 @@ class Api {
 }
 
 export const api = new Api({
-  baseUrl: 'https://july.nomoredomainsicu.ru',
+  baseUrl: 'https://api.july.nomoredomainsicu.ru',
   // headers: {
   //   authorization: '5887a0c5-56a4-4e48-bec1-f3083e2d9c60',
   //   'Content-Type': 'application/json'

@@ -1,4 +1,4 @@
-const baseUrl = 'https://july.nomoredomainsicu.ru'
+const baseUrl = 'https://api.july.nomoredomainsicu.ru'
 
 function checkRes(res){
   if (res.ok) {
