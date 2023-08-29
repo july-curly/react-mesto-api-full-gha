@@ -1,4 +1,4 @@
-const baseUrl = 'http://localhost:3000/'
+const baseUrl = 'http://localhost:3000'
 
 function checkRes(res){
   if (res.ok) {
@@ -10,7 +10,7 @@ function checkRes(res){
 }
 
 export function register (email, password) {
-  return fetch(`${baseUrl}signup`, {
+  return fetch(`${baseUrl}/signup`, {
     method: 'POST',
     headers: {"Content-Type": "application/json" },
     body: JSON.stringify({
@@ -22,7 +22,7 @@ export function register (email, password) {
 }
 
 export function authorize (email, password) {
-  return fetch(`${baseUrl}signin`, {
+  return fetch(`${baseUrl}/signin`, {
     method: 'POST',
     headers: {"Content-Type": "application/json" },
     body: JSON.stringify({
@@ -34,7 +34,7 @@ export function authorize (email, password) {
 }
 
 export function checkToken (token) {
-  return fetch(`${baseUrl}users/me`, {
+  return fetch(`${baseUrl}/users/me`, {
     method: 'GET',
     headers: {
       "Content-Type": "application/json",
