@@ -128,16 +128,6 @@ function App() {
     }
   }, [isAuthenticated])
 
-  // useEffect(() =>{
-  //   Promise.all([api.getInfo(), api.getInitialCards()])
-  //     .then(([user, cards]) => {
-  //       setCurrentUser(user)
-  //       setCards(cards)
-  //     })
-  //     .catch((error) => {
-  //       console.error(`Ошибка получения данных профиля ${error}`)
-  // })}, [])
-
   function handleRegister(email, password) {
     register(email, password)
       .then(() =>{
@@ -171,7 +161,7 @@ function App() {
     if (localStorage.jwt) { 
       checkToken(localStorage.jwt) 
         .then((res) => { 
-          setEmail(res.data.email) 
+          setEmail(res.email) 
           setIsAuthenticated(true) 
           navigate('/') 
         }) 
@@ -181,7 +171,7 @@ function App() {
     } else { 
       setIsAuthenticated(false) 
     }   
-  }, [navigate])
+  }, [])
 
   function handleSignOut() {
     localStorage.removeItem('jwt');
