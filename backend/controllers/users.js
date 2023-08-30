@@ -108,7 +108,7 @@ module.exports.login = (req, res, next) => {
   return User.findUserByCredentials(email, password)
     .then((user) => {
       const payload = { _id: user._id };
-      const token = jwt.sign(payload, 'SECRET', { expiresIn: '7d' });
+      const token = jwt.sign(payload, process.env.SECRET, { expiresIn: '7d' });
       res.status(HTTP_STATUS_OK).send({ token });
     })
     .catch((err) => {
