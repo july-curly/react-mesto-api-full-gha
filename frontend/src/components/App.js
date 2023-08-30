@@ -181,7 +181,7 @@ function App() {
     } else { 
       setIsAuthenticated(false) 
     }   
-  }, [])
+  }, [navigate])
 
   function handleSignOut() {
     localStorage.removeItem('jwt');
