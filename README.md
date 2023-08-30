@@ -9,7 +9,7 @@
 
 ## Ссылки на проект
 
-IP 158.160.26.138
+IP 158.160.113.167
 
 Frontend https://july.nomoredomainsicu.ru
 
