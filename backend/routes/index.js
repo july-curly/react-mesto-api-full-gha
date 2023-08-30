@@ -9,11 +9,11 @@ const { login } = require('../controllers/users');
 const { createUser } = require('../controllers/users');
 const urlRegexPattern = require('../utils/constants');
 
-router.get('/crash-test', () => {
-  setTimeout(() => {
-    throw new Error('Сервер сейчас упадёт');
-  }, 0);
-});
+// router.get('/crash-test', () => {
+//   setTimeout(() => {
+//     throw new Error('Сервер сейчас упадёт');
+//   }, 0);
+// });
 
 router.post('/signup', celebrate({
   body: Joi.object().keys({
@@ -25,11 +25,11 @@ router.post('/signup', celebrate({
   }).unknown(true),
 }), createUser);
 
-router.get('/crash-test', () => {
-  setTimeout(() => {
-    throw new Error('Сервер сейчас упадёт');
-  }, 0);
-});
+// router.get('/crash-test', () => {
+//   setTimeout(() => {
+//     throw new Error('Сервер сейчас упадёт');
+//   }, 0);
+// });
 
 router.post('/signin', celebrate({
   body: Joi.object().keys({
